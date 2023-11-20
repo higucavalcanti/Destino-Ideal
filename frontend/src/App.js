@@ -1,10 +1,11 @@
-import './App.css';
+import * as C from './App.styles';
 
-function App() {
+const App = () => {
+  
   return (
-    <div className="App">
-      <p>Hello world!</p>
-    </div>
+    <C.Container>
+      Hello world!
+    </C.Container>
   );
 }
 
