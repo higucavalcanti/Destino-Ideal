@@ -1,10 +1,12 @@
 import * as C from './App.styles';
+import { Header } from './components/Header';
 
 const App = () => {
-  
+
   return (
     <C.Container>
-      Hello world!
+      <Header/>
+        PROJETO!
     </C.Container>
   );
 }
