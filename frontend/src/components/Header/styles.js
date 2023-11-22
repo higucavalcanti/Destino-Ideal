@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background: #F9F9F9;
-    flex: 1;
-    padding: 10px 0;
+    width: 100%;
+    display: flex;
 
     p {
         font-family: 'Inter';
@@ -13,15 +13,8 @@ export const Container = styled.div`
 `; 
 
 export const Logo = styled.div`
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    a {
-        display: flex;
-        align-items: center;
-    }
+    width: 40px;
+    margin-top: 14px;
+    margin-left: 5px;
+    padding: 5px;
 `;
