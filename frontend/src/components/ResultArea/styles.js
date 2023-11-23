@@ -7,6 +7,7 @@ export const Container = styled.div`
     h1 {
         font-family: 'Inter';
         text-align: center;
+        font-size: 45px;
     }
 `;
 
