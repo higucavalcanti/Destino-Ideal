@@ -11,12 +11,10 @@ export const SearchArea = () => {
       <C.Content>
         <h1>Pesquise seu destino</h1>
         <p>e saiba mais sobre ele</p>
-        <label>
-          <input className="input"
-          type="text" 
-          placeholder="Pesquise seu destino" />
-        <C.Icon src={icone} alt="icone de pesquisa"/>
-        </label>
+        <C.Label>
+          <input className="input" type="text" placeholder="Pesquise seu destino" />
+          <C.Icon src={icone} alt="icone de pesquisa"/>
+        </C.Label>
       </C.Content>
     </C.Container>
   );
