@@ -7,14 +7,14 @@ export const SearchArea = () => {
   return (
     <C.Container>
       <div className="overlay"></div>
-      <C.Video src={video} muted autoPlay loop type="video/mp4" />
+      <C.Video src={video} muted autoPlay="autoplay" loop type="video/mp4" />
       <C.Content>
         <h1>Pesquise seu destino</h1>
         <p>e saiba mais sobre ele</p>
-        <C.Label>
-          <input className="input" type="text" placeholder="Pesquise seu destino" />
+        <div className="input flex">
+          <input type="text" placeholder="Pesquise seu destino" />
           <C.Icon src={icone} alt="icone de pesquisa"/>
-        </C.Label>
+        </div>
       </C.Content>
     </C.Container>
   );

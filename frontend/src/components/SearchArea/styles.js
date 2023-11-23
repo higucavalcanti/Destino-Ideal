@@ -41,38 +41,40 @@ export const Content = styled.div`
         font-size: 38px;
     }
 
-    label {
-        margin-top: 20px;
+    .input {
         display: flex;
+        margin-top: 20px;
+        padding: 10px;
+        width: 600px;
+        background-color: #F9F9F9;
         align-items: center;
-        width: 80%;
+        border-radius: 3rem;
 
-        .input {
-            flex: 1;
-            padding: 10px;
-            border: 2px solid #fff;
-            border-radius: 10px;
-            background-color: #F9F9F9;
+        input {
+            border: none;
+            outline: none;
+            background: none;
             width: 100%;
+            font-size: 15px;
+            font-weight: 500;
+            margin-left: 10px; 
+            &::placeholder{
+                font-size: 15px;
+            }
         }
+
+    color: #F9F9F9;
     }
 `;
 
 
 export const Icon = styled.img`
-    width: 24px;
-    height: 24px;
-    margin-left: 590px;
+    width: 25px;
+    height: 25px;
+    margin-left: 550px;
     z-index: 7;
     position: absolute; 
     cursor:pointer;
-`;
-export const Label = styled.label`
-
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-
 `;
 
 export const Video = styled.video`
