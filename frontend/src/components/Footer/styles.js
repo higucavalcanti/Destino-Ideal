@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin-top: auto;
     background: #E9E9E9;
-    padding: 40px;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 `;
