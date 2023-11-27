@@ -10,9 +10,9 @@ export const SearchArea = ({ onResponseChange }) => {
   const fetchResponse = useCallback(async () => {
     try {
       const messages = [
-        { "role": "user", "content": "bom dia, esta é a mensagem do usuario" },
-        { "role": "assistant", "content": "bom dia, esta é a resposta do assistente" },
-        { "role": "user", "content": `Conte informações importantes para quem quer viajar para ${searchText}` },
+        { "role": "user", "content": `Desejo viajar para ${searchText},
+         me conte sobre o local. Além disso, liste todos os seus feriados,
+         tanto nacionais como locais usando a formatação "Feriados Nacionais: 1. [...]"` },
       ];
 
       const requestData = await maritalkResponse(messages);

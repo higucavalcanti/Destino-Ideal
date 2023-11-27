@@ -13,7 +13,7 @@ export const maritalkResponse = async (messages) => {
   const requestData = {
     "messages": messages,
     "do_sample": true,
-    'max_tokens': 200,
+    'max_tokens': 3000,
     "temperature": 0.7,
     "top_p": 0.95,
   };
