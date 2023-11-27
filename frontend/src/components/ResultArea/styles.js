@@ -26,7 +26,7 @@ export const ResultContainer = styled.div`
         display: block;
         margin-bottom: 20px;
 
-        input {
+        textarea {
             background-color: #F5F5F5;
             display: block;
             margin-top: 10px;
