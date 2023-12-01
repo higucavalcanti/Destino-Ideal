@@ -7,4 +7,5 @@ export const Container = styled.div`
     position: fixed;
     bottom: 0;
     left: 0;
+    margin-top: 10px;
 `;
