@@ -4,8 +4,8 @@ export const LoadingIndicator = styled.div`
   border: 4px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   border-top: 4px solid #3498db;
-  width: 24px;
-  height: 24px;
+  width: 21px;
+  height: 20px;
   animation: spin 1s linear infinite;
   margin: 0 auto;
   
@@ -70,9 +70,9 @@ export const Content = styled.div`
             outline: none;
             background: none;
             width: 100%;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 500;
-            margin-left: 10px; 
+            margin-left: 15px; 
             &::placeholder{
                 font-size: 15px;
             }
