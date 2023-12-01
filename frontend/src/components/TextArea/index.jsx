@@ -6,7 +6,7 @@ export const TextArea = ( {result}) => {
         <C.TextArea 
             name="result" 
             cols={35} 
-            rows={10} 
+            rows={28} 
             placeholder="Resultado"
             value={result} 
             readOnly />
