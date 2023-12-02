@@ -33,6 +33,7 @@ export const SearchArea = ({ onResponseChange }) => {
     }
   };
 
+
   return (
     <C.Container>
       <div className="overlay"></div>
