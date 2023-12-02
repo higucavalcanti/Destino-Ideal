@@ -12,12 +12,14 @@ export const ResultArea = () => {
 
   return (
     <C.Container>
-      <C.ResultContainer>Resultado</C.ResultContainer>
+      <C.ResultContainer>
+        <p>Resultado</p>
+      </C.ResultContainer>
       <C.ResultInput>
         <div className="input flex">
           <input
               type="text"
-              placeholder="Pesquise um ponto (Restaurante, hoteis e etc...)"
+              placeholder="Pesquise um ponto (Restaurantes, hoteis e etc...)"
               value={searchPoint}
               onChange={(e) => setSearchPoint(e.target.value)}
               onKeyDown={handleKeyDown}
