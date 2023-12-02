@@ -10,11 +10,12 @@ export const Container = styled.div`
 
 export const TextArea = styled.textarea`
     background-color: #F5F5F5;
-    width: calc(100% - 40px);
+    margin-left: 10px;
+    width: calc(100% - 20px);
     border: none;
     border-radius: 10px;
     color: #000;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
     resize: none;
 `;
