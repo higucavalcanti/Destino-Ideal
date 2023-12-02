@@ -6,6 +6,7 @@ export const ResultArea = () => {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
+      setSearchPoint('');
     }
   };
 
@@ -18,6 +19,7 @@ export const ResultArea = () => {
               type="text"
               placeholder="Pesquise um ponto (Restaurante, hoteis e etc...)"
               value={searchPoint}
+              onChange={(e) => setSearchPoint(e.target.value)}
               onKeyDown={handleKeyDown}
           />
         </div>

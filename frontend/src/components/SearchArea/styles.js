@@ -72,7 +72,7 @@ export const Content = styled.div`
             width: 100%;
             font-size: 16px;
             font-weight: 500;
-            margin-left: 15px; 
+            margin-left: 10px; 
             &::placeholder{
                 font-size: 15px;
             }

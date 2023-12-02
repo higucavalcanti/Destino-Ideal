@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: #F00000;
     padding: 64px 64px 0;
     display: flex;
 `;
@@ -9,7 +8,7 @@ export const Container = styled.div`
 export const ResultContainer = styled.div`
     background-color: #F5F5F5;
     font-family: 'Inter';
-    font-size: 25px;
+    font-size: 28px;
     color: #26897D;
     width: 100%;
     border-radius: 20px 0 0 0;
@@ -23,7 +22,7 @@ export const ResultInput = styled.div`
   padding: 10px;
   align-items: center;
   border-radius: 0 20px 0 0;
-  background-color: #000;
+  background-color: #F5F5F5;
 
   input {
     padding: 10px;
@@ -34,6 +33,7 @@ export const ResultInput = styled.div`
     width: 345px;
     font-size: 16px;
     font-weight: 500;
+    margin-right: 10px;
     margin-left: auto;
     &::placeholder {
       font-size: 15px;
