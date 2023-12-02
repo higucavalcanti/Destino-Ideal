@@ -13,8 +13,5 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #FFF;
     color: #000;
     font-family: 'Inter', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
   }
 `;

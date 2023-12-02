@@ -6,9 +6,12 @@ import maritalkResponse from '../../api/maritalk';
 
 export const SearchArea = ({ onResponseChange }) => {
   const [searchText, setSearchText] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
 
   const fetchResponse = useCallback(async () => {
     try {
+      setIsLoading(true);
       const messages = [
         { "role": "user", "content": `Desejo viajar para ${searchText},
          me conte sobre o local. Além disso, liste todos os seus feriados,
@@ -16,11 +19,12 @@ export const SearchArea = ({ onResponseChange }) => {
       ];
 
       const requestData = await maritalkResponse(messages);
+      setIsLoading(false);
       setSearchText('');
       onResponseChange(requestData.answer); // Pass the response to the parent component
     } catch (error) {
       console.error('Error fetching response:', error);
-    }
+    } 
   }, [searchText, onResponseChange]);
 
   const handleKeyDown = (event) => {
@@ -28,6 +32,7 @@ export const SearchArea = ({ onResponseChange }) => {
       fetchResponse();
     }
   };
+
 
   return (
     <C.Container>
@@ -44,7 +49,11 @@ export const SearchArea = ({ onResponseChange }) => {
             onChange={(e) => setSearchText(e.target.value)}
             onKeyDown={handleKeyDown}
           />
-          <C.Icon src={icone} alt="icone de pesquisa" />
+          {isLoading ? (
+            <C.LoadingIndicator />
+          ) : (
+            <C.Icon src={icone} alt="icone de pesquisa" onClick={fetchResponse} />
+          )}
         </div>
       </C.Content>
     </C.Container>
