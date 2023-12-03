@@ -17,7 +17,7 @@ export const MapPage = () => {
       <GoogleMap
         mapContainerStyle={{width: '100%', height: '100%' }}
         center={{lat: -8.278537, lng: -35.981223}}
-        zoom={10}
+        zoom={13}
       ></GoogleMap>
   ) : <></>}
     </div>;
