@@ -5,6 +5,11 @@ import { Footer } from './components/Footer';
 import { ParentComponent } from './pages/page';
 
 const App = () => {
+  const [responseText, setResponseText] = useState('');
+
+  const handleResponseChange = (newResponseText) => {
+    setResponseText(newResponseText);
+  };
   return (
     <>
       <C.GlobalStyle />
