@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { TextArea } from './components/TextArea';
 import { ResultArea } from './components/ResultArea';
 import { SearchArea } from './components/SearchArea';
+import {MapPage} from './api/maps.tsx';
 
 const App = () => {
   const [responseText, setResponseText] = useState('');
@@ -18,7 +19,10 @@ const App = () => {
       <Header />
       <SearchArea onResponseChange={handleResponseChange} />
       <ResultArea />
-      <TextArea result={responseText} />
+      <C.Container>
+        <TextArea result={responseText} />
+        <MapPage/>
+      </C.Container>
       <Footer />
     </>
   );

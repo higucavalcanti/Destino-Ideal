@@ -5,8 +5,8 @@ export const TextArea = ( {result}) => {
     <C.Container>
         <C.TextArea 
             name="result" 
-            cols={35} 
-            rows={28} 
+            cols={55} 
+            rows={30} 
             placeholder="Resultado"
             value={result} 
             readOnly />
