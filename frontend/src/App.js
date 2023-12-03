@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as C from './App.styles';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { ParentComponent } from './pages/page';
+import { TextArea } from './components/TextArea';
+import { ResultArea } from './components/ResultArea';
+import { SearchArea } from './components/SearchArea';
 
 const App = () => {
   const [responseText, setResponseText] = useState('');
@@ -14,7 +16,9 @@ const App = () => {
     <>
       <C.GlobalStyle />
       <Header />
-      <ParentComponent />
+      <SearchArea onResponseChange={handleResponseChange} />
+      <ResultArea />
+      <TextArea result={responseText} />
       <Footer />
     </>
   );
