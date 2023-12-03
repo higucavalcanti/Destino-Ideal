@@ -23,6 +23,7 @@ export const ResultContainer = styled.div`
 
 export const ResultInput = styled.div`
   display: flex;
+  flex-direction:column;
   margin-top: 100px;
   padding: 10px;
   align-items: center;

@@ -5,13 +5,12 @@ export const Container = styled.div`
     background-color: #F5F5F5;
     border-radius: 0 0 20px 20px;
     margin-left: 64px;
-    margin-right: 64px; 
 `;
 
 export const TextArea = styled.textarea`
     background-color: #F5F5F5;
     margin-left: 10px;
-    width: calc(100% - 20px);
+    width: 'calc(100% - 20px)';
     border: none;
     border-radius: 10px;
     color: #000;
