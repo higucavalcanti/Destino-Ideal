@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const ResultContainer = styled.div`
     background-color: #F5F5F5;
     width: 100%;
-    border-radius: 20px 0 0 0;
+    border-radius: 20px 20px 0 0;
     padding: 20px;
     margin-top: 100px;
 
@@ -31,18 +31,18 @@ export const ResultInput = styled.div`
   background-color: #F5F5F5;
 
   input {
-    padding: 10px;
-    border-radius: 3rem;
-    border: none;
-    outline: none;
-    background: #FFF;
-    width: 350px;
-    font-size: 16px;
-    font-weight: 500;
-    margin-right: 28px;
-    margin-left: auto;
-    &::placeholder {
-      font-size: 15px;
-    }
+     padding: 10px;
+     border-radius: 3rem;
+     border: none;
+     outline: none;
+     background: #FFF;
+     width: 350px;
+     font-size: 16px;
+     font-weight: 500;
+     margin-right: 28px;
+     margin-left: auto;
+     &::placeholder {
+       font-size: 15px;
+      }
   }
 `;
