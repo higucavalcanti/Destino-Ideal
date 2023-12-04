@@ -13,15 +13,15 @@ const maritalkResponse = async (messages) => {
 
   try {
     const response = await axios.post(backendUrl, requestData);
-    if (response.status === 429) {
-      console.log("Rate limited, tente novamente em breve");
-    } else if (response.status === 200) {
+     if (response.status === 200) {
       const data = response.data;
       console.log(data.answer);
       return data;
+    } else if (response.status === 429) {
+      console.log("Rate limited, tente novamente em breve");
     } else {
       console.error(`Erro na solicitação: ${response.statusText}`);
-      throw new Error(response.statusText);
+      throw new Error(`Erro na solicitação: ${response.statusText}`);
     }
   } catch (error) {
     console.error("Erro na solicitação:", error.message);
