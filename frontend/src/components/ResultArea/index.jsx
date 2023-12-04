@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import * as C from './styles';
 
-export const ResultArea = () => {
-  const [searchPoint, setSearchPoint] = useState('');
+export const ResultArea = ( {searchText} ) => {
+  // const [searchPoint, setSearchPoint] = useState('');
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      setSearchPoint('');
+      // setSearchPoint('');
     }
   };
 
@@ -15,7 +15,7 @@ export const ResultArea = () => {
       <C.ResultContainer>
         <p>Resultado</p>
       </C.ResultContainer>
-      <C.ResultInput>
+      {/* <C.ResultInput>
         <div className="input flex">
           <input
               type="text"
@@ -25,7 +25,7 @@ export const ResultArea = () => {
               onKeyDown={handleKeyDown}
           />
         </div>
-      </C.ResultInput>
+      </C.ResultInput> */}
     </C.Container>
   );
 };
