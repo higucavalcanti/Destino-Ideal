@@ -5,7 +5,7 @@ import { Footer } from './components/Footer';
 import { TextArea } from './components/TextArea';
 import { ResultArea } from './components/ResultArea';
 import { SearchArea } from './components/SearchArea';
-import {MapPage} from './api/maps.tsx';
+import {MapPage} from './api/maps.jsx';
 
 const App = () => {
   const [responseText, setResponseText] = useState('');

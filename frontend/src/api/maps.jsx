@@ -3,8 +3,6 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 import './maps.css'
 
-export interface MapPageProps{}
-
 export const MapPage = () => {
 
     const { isLoaded } = useJsApiLoader({
