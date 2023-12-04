@@ -1,6 +1,6 @@
 // Exemplo usando Express
 const express = require('express');
-const maritacaController = require('./maritalk/maritacaController');
+const maritacaController = require('./controllers/maritacaController');
 const app = express();
 const port = 3001;
 const cors = require('cors');
